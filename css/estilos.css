@@ -1,0 +1,31 @@
+.oculto {
+    display: none;
+}
+
+
+/* Agregando la fuente de firma que me gusta */
+
+@font-face {
+    font-family: 'AcrossTheRoad';
+    src: url(../fonts/AcrossTheRoad.ttf);
+}
+
+.spacio {
+    margin: 8px 0px 8px;
+}
+
+.fSotnas {
+    /* position: absolute; */
+    font-family: AcrossTheRoad;
+    font-weight: 300;
+    font-size: 40px;
+    color: white;
+}
+
+.fSotnas:hover {
+    color: red;
+    transition: ease-in-out .55s;
+}
+
+
+/* https://youtu.be/6BkKiiuTxo8?t=577 */

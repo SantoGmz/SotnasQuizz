@@ -5,7 +5,7 @@
 > SotnasQuizz es un juego web de preguntas de matematicas.
 
 ### ¿Que significa "Sotnas"
->Sotnas: Es el nombre del creador alreves, ¿Por que lo hace asi?, porque si.
+>Sotnas: Es el nombre del creador alreves, ¿Por qué lo hace asi?, porque sí.
 
  ### Porque esta creado "SotnasQuizz"
 >Este proyecto esta creado pensando en los quizz de matemáticas que aparecen en imágenes Yo lo comencé a hacer con una idea, entonces una idea llevó a otra y así sucesivamente hasta ahora sigo trabajando en el cogiéndolo como practica para algún día pueda ser terminado.

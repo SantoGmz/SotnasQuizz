@@ -17,7 +17,7 @@
  - Html 5
  - JavaScript
  - Jquery 3.4.1
- - 
+ 
 ### Inspiradores
 > Proyecto inspirado por [Cristian Nuñez](https://github.com/cristian15nz) y [Wilson Gonzalez](https://github.com/wgonzalez2005)
 >10/marzo/2020

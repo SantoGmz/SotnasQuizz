@@ -340,13 +340,21 @@ $(function() {
 
 
     // click en facil, Instrucciones
-
     $('#ayuda').on("click", () =>{
         $.dialog({
             title: 'Nivel 1/3',
             content: 'Este nivel trata de insertar valores de 4 dígitos o Generarlos automáticamente luego buscar como se crean las respuestas a partir de las operaciones dadas como ejemplos.',
         });
-     })
+    })
+
+
+        // <==============================|-|S O T N A S |-| Q U I Z|-|==============================>
+
+    //<===================ejercicio 3===================>
+    document.querySelector("#pos2").innerHTML=aleatorio(1,20);
+
+    //<===================ejercicio 3===================>
+
 
 
 

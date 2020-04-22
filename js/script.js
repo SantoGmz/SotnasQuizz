@@ -351,10 +351,10 @@ $(function() {
                                             // <==============================|-|S O T N A S |-| Q U I Z|-|==============================>
 
     //<===================ejercicio 3===================>
-             $('#ejectEjerci3').on("click", () =>{
-
+             $('#ejecEjecicio3').on("click", () =>{
+                    //Cruz 1
                 var numCruz1 = new Array();
-                var selectCruz1 = new Array("#cPos2","#cPos1","#cPos0","#cPos3","#cPos4")
+                var selectCruz1 = new Array("#c1Pos2","#c1Pos1","#c1Pos0","#c1Pos3","#c1Pos4");
                 for(let a = 0; a <2; a++){
                     numCruz1.push(aleatorio(3,12));
                     }
@@ -364,12 +364,37 @@ $(function() {
                 for(let i = 0; i <5; i++){
                     document.querySelector(selectCruz1[i]).innerHTML=numCruz1[i];
                 }
-                
-             });
+
+                    //Cruz 2
+                    var numCruz2 = new Array();
+                    var selectCruz2 = new Array("#c2Pos2","#c2Pos1","#c2Pos0","#c2Pos3","#c2Pos4")
+                    for(let a = 0; a <2; a++){
+                        numCruz2.push(aleatorio(3,12));
+                        }
+                    for(let a = 1; a <4; a++){
+                        numCruz2.push(numCruz2[0]+numCruz2[a]);
+                    }
+                    for(let i = 0; i <5; i++){
+                        document.querySelector(selectCruz2[i]).innerHTML=numCruz2[i];
+                    }
+                    
 
 
-
-
+                    //Cruz 3
+                 var numCruz3 = new Array();
+                 var selectCruz3 = new Array("#c3Pos2","#c3Pos1","#c3Pos0","#c3Pos3","#c3Pos4")
+                 for(let a = 0; a <2; a++){
+                     numCruz3.push(aleatorio(3,12));
+                     }
+                 for(let a = 1; a <4; a++){
+                     numCruz3.push(numCruz3[0]+numCruz3[a]);
+                 }
+                 for(let i = 0; i <5; i++){
+                     document.querySelector(selectCruz3[i]).innerHTML=numCruz3[i];
+                 }
+                 
+                    
+                 });              
     //<===================ejercicio 3===================>
 
 

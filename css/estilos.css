@@ -27,5 +27,11 @@
     transition: ease-in-out .55s;
 }
 
+.caja{
+    border: 1px solid;
+}
 
+.caja2{
+    border: 1px solid red;
+}
 /* https://youtu.be/6BkKiiuTxo8?t=577 */

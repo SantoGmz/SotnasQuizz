@@ -22,5 +22,5 @@
 > Proyecto inspirado por [Cristian Nuñez](https://github.com/cristian15nz) y [Wilson Gonzalez](https://github.com/wgonzalez2005)
 >10/marzo/2020
 
-#### Semana de modificación
+#### Semana de ultima modificación
  - semana numero 17

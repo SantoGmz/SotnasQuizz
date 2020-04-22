@@ -348,10 +348,34 @@ $(function() {
     })
 
 
-        // <==============================|-|S O T N A S |-| Q U I Z|-|==============================>
+                                            // <==============================|-|S O T N A S |-| Q U I Z|-|==============================>
 
     //<===================ejercicio 3===================>
-    document.querySelector("#pos2").innerHTML=aleatorio(1,20);
+            // $('#ejectEjerci3').on("click", () =>{
+
+
+            // });
+
+    var numCruz1 = new Array();
+
+
+    var selectCruz1 = new Array("#cPos2","#cPos1","#cPos0","#cPos3","#cPos4")
+
+    for(let a = 0; a <2; a++){
+    numCruz1.push(aleatorio(1,8));
+     }
+
+     numCruz1.push(numCruz1[0]+numCruz1[1]);
+     numCruz1.push(numCruz1[0]+numCruz1[2]);
+     numCruz1.push(numCruz1[0]+numCruz1[3]);
+
+    for(let i = 0; i <5; i++){
+        document.querySelector(selectCruz1[i]).innerHTML=numCruz1[i];
+
+    }
+    
+
+
 
     //<===================ejercicio 3===================>
 
@@ -359,3 +383,4 @@ $(function() {
 
 
 });
+                                            // <==============================|-|S O T N A S |-| Q U I Z|-|==============================>

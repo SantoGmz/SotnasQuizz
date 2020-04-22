@@ -1,10 +1,13 @@
+                            // <==============================|-|S O T N A S |-| Q U I Z|-|==============================>
+
 $(function() {
 
     $('#tablaDetalles').hide();
     $('#clear').hide();
     $('#ejerc2').hide();
     //$('#eje2ResultadoFinal').hide('fast');
-  
+                            // <==============================|-|S O T N A S |-| Q U I Z|-|==============================>
+
     //Generar numero aleatorio de 4 digitos
     function aleatorio(min, max) {
         return Math.round(Math.random() * (max - min) + min);
@@ -38,6 +41,8 @@ $(function() {
 
     };
 
+                            // <==============================|-|S O T N A S |-| Q U I Z|-|==============================>
+
     //REstablece color de los imput
     function restablecerColor() {
         $('#cp1').css({
@@ -53,6 +58,7 @@ $(function() {
             'border': '1px solid #C2BEBE'
         });
     };
+                            // <==============================|-|S O T N A S |-| Q U I Z|-|==============================>
 
     //btn-crear
     $('#crear').on("click", function() {
@@ -118,6 +124,7 @@ $(function() {
         //convirtiendo las variables ne resultado final
         var input4resultado = `${input4Suma1}${input4Suma2}`;
 
+                            // <==============================|-|S O T N A S |-| Q U I Z|-|==============================>
         //console.log(input1);
         //esta condicion comprueva que todos los imput tengan los 4 digitos, todos
         if (input1.length == 4 && input2.length == 4 && input3.length == 4 && input4.length == 4) {
@@ -164,6 +171,7 @@ $(function() {
             document.getElementById('cuerpoTabla').innerHTML = txt;
 
 
+                            // <==============================|-|S O T N A S |-| Q U I Z|-|==============================>
             //errores de input   
         }
         if (input1.length != 4) {
@@ -197,6 +205,8 @@ $(function() {
         console.log(input4resultado)
     });
 
+        // S O T N A S - Q U I Z
+                            // <==============================|-|S O T N A S |-| Q U I Z|-|==============================>
 
 
     //btn-adivinar
@@ -226,6 +236,7 @@ $(function() {
 
         }
         // var conteo = respuesta.length;
+                            // <==============================|-|S O T N A S |-| Q U I Z|-|==============================>
 
     });
 
@@ -272,6 +283,7 @@ $(function() {
 
                 // $(this).addClass('oculto');
                 var txt2 = "";
+                            // <==============================|-|S O T N A S |-| Q U I Z|-|==============================>
 
                 //esto es la cabecera
                 txt2 += '<tr>';
@@ -302,6 +314,7 @@ $(function() {
                 console.log(resultao);
                 document.getElementById('inpResultEje2').value = resultao;
 
+                            // <==============================|-|S O T N A S |-| Q U I Z|-|==============================>
 
             }
             s.innerHTML = contador_s;
@@ -348,7 +361,7 @@ $(function() {
     })
 
 
-                                            // <==============================|-|S O T N A S |-| Q U I Z|-|==============================>
+                            // <==============================|-|S O T N A S |-| Q U I Z|-|==============================>
 
     //<===================ejercicio 3===================>
              $('#ejecEjecicio3').on("click", () =>{

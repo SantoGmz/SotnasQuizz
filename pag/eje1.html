@@ -150,7 +150,7 @@
     
     
     
-    <td> <input type="button" class="btn btn-primary" value="enviar" id="ejecEjecicio3"> </td>
+     <input type="button" class="btn btn-primary" value="enviar" id="ejecEjecicio3"> 
 
 
 
@@ -162,8 +162,8 @@
         <h1 class="text-center">Las Tres Cruces</h1>
         <div class="row text-center">
 
-            <div class="col-md-6 py-3">
-                <!-- Cruz 1 -->
+            <!-- Cruz 1 -->
+            <div class="col-md-5 py-3">
                 <!-- columna 1     -->
                 <div class="row eje3">
                     <div class="col"></div>
@@ -187,13 +187,15 @@
                     <div class="col"></div>
                 </div>
                 <!-- ///olumna 3 ///-->
-                <!-- ///Cruz 1///         -->
             </div>
+            <!-- ///Cruz 1///         -->
+            <!-- division de las columnas 1 y 2 -->
+            <div class="col-md-2"></div>
+            <!-- division de las columnas 1 y 2 -->
 
+            <!-- Cruz 2 -->
+            <div class="col-md-5 py-3">
 
-            <div class="col-md-6 py-3">
-
-                <!-- Cruz 2 -->
                 <!-- columna 1     -->
                 <div class="row eje3">
                     <div class="col"></div>
@@ -217,13 +219,16 @@
                     <div class="col"></div>
                 </div>
                 <!-- ///olumna 3 ///-->
-                <!-- ///Cruz 2///         -->
             </div>
+            <!-- ///Cruz 2/// -->
+<!-- divisiones para centrar la terceracruz -->
 
             <div class="col-md-3 py-3"></div>
+<!-- ///////////divisiones para centrar la terceracruz/////////// -->
+
+            <!-- Cruz 3 -->
             <div class="col-md-6">
 
-                <!-- Cruz 3 -->
                 <!-- columna 1     -->
                 <div class="row eje3">
                     <div class="col"></div>
@@ -235,7 +240,7 @@
                 <!-- columna 2     -->
                 <div class="row eje3">
                     <div class="col caja" id="c3Pos1">lm 1</div>
-                    <div class="col caja" id="c3Pos2">lm 2</div>
+                    <div class="col caja" id="c3Pos2"><input type="number" id="inputRespuesta3"></div>
                     <div class="col caja" id="c3Pos3">lm 3</div>
                 </div>
                 <!-- ///columna 2 ///    -->
@@ -247,16 +252,17 @@
                     <div class="col"></div>
                 </div>
                 <!-- ///olumna 3 ///-->
-                <!-- ///Cruz 3///         -->
             </div>
+            <!-- ///Cruz 3///         -->
             <!-- //ejercicio3// -->
+
+            <input type="hidden" id="respuestaEject3">
         </div>
 
-
-
-
-
+<!-- divisiones para centrar la terceracruz -->
         <div class="col-md-3"></div>
+<!-- ///////////divisiones para centrar la terceracruz/////////// -->
+<input type="button" class="btn btn-primary" value="enviar" id="comprobarResultado3"> 
 
 
 

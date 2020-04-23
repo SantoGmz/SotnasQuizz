@@ -31,15 +31,26 @@
     
     background-color: #007bff;
     color: white;
-    width: 60px;
-    height: 80px;
+    width: 60px; 
+    height: 90px;
     font-size: 35px;
-    margin-top: 0 auto;
     border-radius: 1px;
 }
 
 .caja:hover{
     background-color: #0372e9;
     
+}
+
+
+#inputRespuesta3{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #3293fa;
+    outline: none;
+    border: none;
+    color: white;
+
 }
 /* https://youtu.be/6BkKiiuTxo8?t=577 */

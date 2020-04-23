@@ -394,7 +394,7 @@ $(function() {
 
 
                     //Cruz 3
-                 var numCruz3 = new Array();
+                 numCruz3 = new Array();
                  var selectCruz3 = new Array("#c3Pos2","#c3Pos1","#c3Pos0","#c3Pos3","#c3Pos4")
                  for(let a = 0; a <2; a++){
                      numCruz3.push(aleatorio(3,12));
@@ -402,12 +402,27 @@ $(function() {
                  for(let a = 1; a <4; a++){
                      numCruz3.push(numCruz3[0]+numCruz3[a]);
                  }
-                 for(let i = 0; i <5; i++){
+                 for(let i = 1; i <5; i++){
                      document.querySelector(selectCruz3[i]).innerHTML=numCruz3[i];
                  }
                  
                     
+
+
+                 console.log(numCruz3[0]);
+
+
+
+
+
+
                  });              
+
+                 
+                //  $('#comprobarResultado3').on("click",()=>{
+                //     console.log(numCruz[0]);
+                //  });
+
     //<===================ejercicio 3===================>
 
 

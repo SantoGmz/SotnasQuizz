@@ -24,3 +24,7 @@
 
 #### Semana de ultima modificación
  - semana numero 17
+
+
+#### Fecha de lanzamiento
+ - 25/abril/2020 v1 (Primer lanzamiento)

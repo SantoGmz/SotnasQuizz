@@ -1,5 +1,4 @@
                             // <==============================|-|S O T N A S |-| Q U I Z|-|==============================>
-
 $(function() {
 
     $('#tablaDetalles').hide();
@@ -362,7 +361,6 @@ $(function() {
 
 
                             // <==============================|-|S O T N A S |-| Q U I Z|-|==============================>
-
     //<===================ejercicio 3===================>
              $('#ejecEjecicio3').on("click", () =>{
                     //Cruz 1
@@ -409,22 +407,54 @@ $(function() {
                     
 
 
-                 console.log(numCruz3[0]);
 
 
 
 
 
 
-                 });              
+
+                 });           
+                 
+                 
 
                  
-                //  $('#comprobarResultado3').on("click",()=>{
-                //     console.log(numCruz[0]);
-                //  });
+                $('#comprobarResultado3').on("click",()=>{
+                //    console.log("hola");
+                //    console.log(numCruz3[0]);
+                   var resultadoEje3 = parseInt(document.querySelector('#inputRespuesta3').value);
+                //    console.log(resultadoEje3,);
+                if(resultadoEje3 == numCruz3[0]){
+                    audio(1)
+                    console.log("Has pasado este nivel completamente")
+
+                }else{
+                    console.log("Error")
+                }
+
+                });
 
     //<===================ejercicio 3===================>
 
+
+    var cambiarColor = setInterval(function(){
+        // $('.fSotnas').addClass('cambiarColor');
+
+
+
+        
+
+        function colores(){
+            
+            var colores = new Array ("#3293fa","#ffc107","#28a745","#17a2b8","#dc3545");
+    
+            return colores[aleatorio(0,3)];
+        };
+
+        $('.fSotnas').css({'color':colores(),'transition':'ease-in-out 2s'});
+  
+        // document.querySelector(".fSotnas").stye.color=aleatorio();
+    },2000)
 
 
 

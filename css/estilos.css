@@ -22,10 +22,6 @@
     color: white;
 }
 
-.fSotnas:hover {
-    color: red;
-    transition: ease-in-out .55s;
-}
 
 .caja{
     
@@ -34,6 +30,7 @@
     width: 60px; 
     height: 90px;
     font-size: 35px;
+    text-align: center;
     border-radius: 1px;
 }
 
@@ -53,4 +50,5 @@
     color: white;
 
 }
+
 /* https://youtu.be/6BkKiiuTxo8?t=577 */

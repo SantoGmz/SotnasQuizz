@@ -427,7 +427,7 @@ $(function() {
                     audio(1)
                     $.confirm({
                         title:'¡Felisidades!',
-                        content: 'Has terminado el nivel fácil!, Pronto habran nuevas actualizaciones, sigue a @sotnasweb en instagram para saber sobre futuras actualizaciones, Tambien puedes enviar sugerencias.',
+                        content: '¡Has terminado el nivel fácil!, Pronto habrán nuevas actualizaciones, sigue a @sotnasweb en Instagram para saber sobre futuras actualizaciones, También puedes enviar sugerencias.',
                         buttons: {
                             specialKey: {
                                 text: 'Entiendo',

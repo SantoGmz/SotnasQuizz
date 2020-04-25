@@ -10,9 +10,7 @@
     src: url(../fonts/AcrossTheRoad.ttf);
 }
 
-.spacio {
-    margin: 8px 0px 8px;
-}
+
 
 .fSotnas {
     /* position: absolute; */
@@ -57,4 +55,12 @@
     display: none;
 }
 
+.img-fluid{
+    width: 250px;
+
+}
+
+.mat{
+    width: 150px;
+}
 /* https://youtu.be/6BkKiiuTxo8?t=577 */

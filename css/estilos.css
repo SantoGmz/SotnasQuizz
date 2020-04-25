@@ -10,7 +10,9 @@
     src: url(../fonts/AcrossTheRoad.ttf);
 }
 
-
+.spacio {
+    margin: 8px 0px 8px;
+}
 
 .fSotnas {
     /* position: absolute; */

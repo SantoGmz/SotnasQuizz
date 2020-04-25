@@ -283,7 +283,7 @@ $(function() {
                 // console.log("pulsado")
                 // $('.ejerc1').show('fast');
                 // $('.ejerc1').addClass('oculto');
-                $.dialog({title: '¡Pienza Rapido!',content: '',});
+                $.dialog({title: '¡Pienza Rapido!',content: 'EL TIEMPO VUELA!',});
                 $('#eje2ResultadoFinal').show('fast');
                 $('#ejerc2').slideToggle('slow');
 

@@ -179,6 +179,7 @@ $(function() {
             $('#cp1').css({
                 'border': '1px solid red'
             });
+            audio(0);
         }
         if (input2.length != 4) {
             // else que es de lo contrario, osea el codigo que no se ejecutará si la condicion no es la que se pide
@@ -186,6 +187,7 @@ $(function() {
             $('#cp2').css({
                 'border': '1px solid red'
             });
+            audio(0);
         }
         if (input3.length != 4) {
             // else que es de lo contrario, osea el codigo que no se ejecutará si la condicion no es la que se pide
@@ -193,6 +195,7 @@ $(function() {
             $('#cp3').css({
                 'border': '1px solid red'
             });
+            audio(0);
         }
         if (input4.length != 4) {
             // else que es de lo contrario, osea el codigo que no se ejecutará si la condicion no es la que se pide
@@ -200,8 +203,10 @@ $(function() {
             $('#cp4').css({
                 'border': '1px solid red'
             });
+
+            audio(0);
         }
-        console.log(input4resultado)
+       //    console.log(input4resultado)
     });
 
         // S O T N A S - Q U I Z
@@ -219,7 +224,7 @@ $(function() {
         // console.log(respuesta);
         if (respuesta == resultado) {
             $('#tablaDetalles').hide('fast');
-            console.log("correcto");
+            //console.log("correcto");
             audio(1)
             $('#iptAdivinar').css({
                 'border': '1px solid green'
@@ -227,7 +232,6 @@ $(function() {
             carga()
 
         } else {
-            console.log("incorrecto");
             audio(2)
             $('#iptAdivinar').css({
                 'border': '1px solid red'
@@ -258,6 +262,10 @@ $(function() {
 
 
     // cronometro para los segudnos
+
+
+    //<===================ejercicio 2===================>
+
 
     function carga() {
 
@@ -310,7 +318,7 @@ $(function() {
                 document.getElementById('tablaCuerpoEj2').innerHTML = txt2;
 
                 var resultao = numerosEje2[0] + numerosEje2[1] + numerosEje2[2] + numerosEje2[3] + numerosEje2[4];
-                console.log(resultao);
+                //console.log(resultao);
                 document.getElementById('inpResultEje2').value = resultao;
 
                             // <==============================|-|S O T N A S |-| Q U I Z|-|==============================>
@@ -328,14 +336,13 @@ $(function() {
             var resultado = parseInt(document.getElementById("inpResultEje2").value);
             var respuesta = parseInt(document.getElementById('iptejerc2EntradaUser').value);
             if (respuesta === resultado) {
-                console.log("entro a la condicion")
                 clearInterval(intervalo);
-                console.log("correcto!");
                 audio(1)
+                ejercicio3();
+                
             } else {
                 document.getElementById('iptejerc2EntradaUser').value = "";
                 audio(2)
-                console.log("incorrecto");
             }
 
             //    console.log(resultado);
@@ -345,24 +352,30 @@ $(function() {
         });
         // Funcion carga↓
     }
-
+    
     // Cierre de crear un input hidden↑
 
+//<===================ejercicio 2===================>
 
 
 
     // click en facil, Instrucciones
     $('#ayuda').on("click", () =>{
         $.dialog({
-            title: 'Nivel 1/3',
-            content: 'Este nivel trata de insertar valores de 4 dígitos o Generarlos automáticamente luego buscar como se crean las respuestas a partir de las operaciones dadas como ejemplos.',
-        });
+            title: '<span class="text-justify">Nivel 1/3</span>',
+            content: '<span class="text-justify">Este nivel trata de insertar valores de 4 dígitos (Tambien puedes generarlos automáticamente dando al boton "Generar Num") luego tienes que tocar donde dice "crear" tienes que observar como se crean las respuestas de cada operacion a partir de las operaciones dadas como ejemplos las cuales son las #0, #1, #2, entonces tienes que buscar y escribir la respuesta de la operacion numero 3</span>'});
     })
 
+//------------------------------------------------------------------------------------------------------------------------//
 
                             // <==============================|-|S O T N A S |-| Q U I Z|-|==============================>
     //<===================ejercicio 3===================>
-             $('#ejecEjecicio3').on("click", () =>{
+        function ejercicio3(){
+            $('#ejerc2').hide("fast");
+
+            $('.ejercicio3').show("slow");
+        
+             
                     //Cruz 1
                 var numCruz1 = new Array();
                 var selectCruz1 = new Array("#c1Pos2","#c1Pos1","#c1Pos0","#c1Pos3","#c1Pos4");
@@ -402,23 +415,9 @@ $(function() {
                  }
                  for(let i = 1; i <5; i++){
                      document.querySelector(selectCruz3[i]).innerHTML=numCruz3[i];
-                 }
-                 
-                    
+                 }            
 
-
-
-
-
-
-
-
-
-                 });           
-                 
-                 
-
-                 
+                 // Comprobacion del resultado del ejercicio3
                 $('#comprobarResultado3').on("click",()=>{
                 //    console.log("hola");
                 //    console.log(numCruz3[0]);
@@ -426,37 +425,49 @@ $(function() {
                 //    console.log(resultadoEje3,);
                 if(resultadoEje3 == numCruz3[0]){
                     audio(1)
-                    console.log("Has pasado este nivel completamente")
-
+                    $.confirm({
+                        title:'¡Felisidades!',
+                        content: 'Has terminado el nivel fácil!, Pronto habran nuevas actualizaciones, sigue a @sotnasweb en instagram para saber sobre futuras actualizaciones, Tambien puedes enviar sugerencias.',
+                        buttons: {
+                            specialKey: {
+                                text: 'Entiendo',
+                                keys: ['shift', 'alt', 'enter'],
+                                action: function(){
+                                    location.href="../index.html";
+                                }
+                            }
+                        }
+                    });
+                    
                 }else{
-                    console.log("Error")
+                    $('#inputRespuesta3').css({
+                        'border': '1px solid red'
+                    });
+                    audio(0)
                 }
 
                 });
+        }            
+    //<===================///ejercicio 3///===================>
 
-    //<===================ejercicio 3===================>
-
+//------------------------------------------------------------------------------------------------------------------------//
+    //<===================Colores del SotnasQuizz===================>
 
     var cambiarColor = setInterval(function(){
         // $('.fSotnas').addClass('cambiarColor');
-
-
-
-        
-
-        function colores(){
+        function coloresNombre(){
             
-            var colores = new Array ("#3293fa","#ffc107","#28a745","#17a2b8","#dc3545");
+            var coloresNombre = new Array ("#3293fa","#ffc107","#28a745","#17a2b8","#dc3545");
     
-            return colores[aleatorio(0,3)];
+            return coloresNombre[aleatorio(0,3)];
         };
 
-        $('.fSotnas').css({'color':colores(),'transition':'ease-in-out 2s'});
+        $('.fSotnas').css({'color':coloresNombre(),'transition':'ease-in-out 2s'});
   
         // document.querySelector(".fSotnas").stye.color=aleatorio();
     },2000)
-
-
+    //<===================///Colores del SotnasQuizz///===================>
+//------------------------------------------------------------------------------------------------------------------------//
 
 
 });
